@@ -1,0 +1,48 @@
+#root {
+  padding: 2rem;
+  font-size: 1.25rem;
+}
+
+.textbox-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.stickyNote-textarea-container {
+  position: fixed;
+  display: inline-block;
+}
+
+.stickyNote-textarea {
+  padding:calc(1rem + 31px) 1rem 1rem;
+  font-size: inherit;
+  outline: none;
+  border: 1px solid black;
+  background-color: green;
+
+}
+
+.stickyNote-textarea-container__close-btn {
+  top: 0;
+  right: 0;
+  position: absolute;
+  margin:auto  0.375rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+  font-size: 1.25rem;
+}
+
+.stickyNote-textarea-container__close-btn:hover {
+  transform: rotate(180deg) scale(1.5);
+}
+
+.stickyNote--pin {
+  cursor: grab;
+  position: absolute;
+  top: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+}
